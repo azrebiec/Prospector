@@ -122,6 +122,15 @@ public class Prospector : MonoBehaviour {
 		switch (cd.state) {
 		case CardState.target:
 			// Clicking the target card does nothing
+			break;
+		case CardState.drawpile:
+			// Clicking any card in the drawPile will draw the next card
+			MoveToDiscard(target); // Moves the target to the discardPile
+			MoveToTarget(Draw()); // Moves the next drawn card to the target
+			UpdateDrawPile(); // Restacks the drawPile
+			break;
+		case CardState.tableau:
+			// Clicking a card in the tableau will check if it's a valid play
 			bool validMatch = true;
 			if (!cd.faceUp) {
 				// If the card is face-down, it's not valid
@@ -135,15 +144,6 @@ public class Prospector : MonoBehaviour {
 			// Yay! It's a valid card.
 			tableau.Remove(cd); // Remove it from the tableau List
 			MoveToTarget(cd); // Make it the target card
-			break;
-		case CardState.drawpile:
-			// Clicking any card in the drawPile will draw the next card
-			MoveToDiscard(target); // Moves the target to the discardPile
-			MoveToTarget(Draw()); // Moves the next drawn card to the target
-			UpdateDrawPile(); // Restacks the drawPile
-			break;
-		case CardState.tableau:
-			// Clicking a card in the tableau will check if it's a valid play
 			MoveToTarget(cd); // Make it the target card
 			SetTableauFaces(); // Update tableau card face-ups
 			break;
