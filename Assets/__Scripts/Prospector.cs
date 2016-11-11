@@ -31,6 +31,8 @@ public class Prospector : MonoBehaviour {
 	public Layout 				layout;
 	public TextAsset 			layoutXML;
 
+	public List<CardProspector> drawPile;
+
 	// Fields to track score info
 	public int chain = 0; // of cards in this run
 	public int scoreRun = 0;
@@ -47,8 +49,6 @@ public class Prospector : MonoBehaviour {
 		// And reset the SCORE_FROM_PREV_ROUND
 		SCORE_FROM_PREV_ROUND = 0;
 	}
-
-	public List<CardProspector> drawPile;
 
 	void Start() {
 		deck = GetComponent<Deck> ();
