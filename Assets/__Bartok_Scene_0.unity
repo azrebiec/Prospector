@@ -166,6 +166,7 @@ GameObject:
   - 124: {fileID: 827460510}
   - 81: {fileID: 827460509}
   - 114: {fileID: 827460514}
+  - 114: {fileID: 827460515}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -300,6 +301,17 @@ MonoBehaviour:
   decorators: []
   cardDefs: []
   deckAnchor: {fileID: 0}
+--- !u!114 &827460515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ead83d5ca34b040bdbc61221519a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1112693844
 GameObject:
   m_ObjectHideFlags: 0

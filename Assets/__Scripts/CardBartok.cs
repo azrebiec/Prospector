@@ -116,7 +116,7 @@ public class CardBartok : Card {
 				//use bezier curve to move this to the right point
 				Vector3 pos = Utils.Bezier (uC, bezierPts);
 				transform.localPosition = pos;
-				Quaternion rotQ = Utils.Bezier (uC, bezierRots);
+				Quaternion rotQ = Utils.Bezier(uC, bezierRots);
 				transform.rotation = rotQ;
 			}
 			break;
