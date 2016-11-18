@@ -746,7 +746,7 @@ GameObject:
   - 64: {fileID: 2128431060}
   - 23: {fileID: 2128431059}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: ProspectorBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
