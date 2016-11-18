@@ -17,7 +17,7 @@ public class Prospector : MonoBehaviour {
 	static public int 			SCORE_FROM_PREV_ROUND = 0;
 	static public int 			HIGH_SCORE = 0;
 
-	public float				reloadDelay = 1f; // The delay between rounds
+	public float				reloadDelay = 5f; // The delay between rounds
 
 	public Vector3 				fsPosMid = new Vector3(0.5f, 0.90f, 0);
 	public Vector3 				fsPosRun = new Vector3(0.5f, 0.75f, 0);
