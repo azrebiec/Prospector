@@ -204,11 +204,11 @@ public class Bartok : MonoBehaviour {
 		if (CURRENT_PLAYER.hand.Count == 0) {
 			// The current player has won!
 			if (CURRENT_PLAYER.type == PlayerType.human) {
-				GTGameOver.guiText.text = "You Won!";
-				GTRoundResult.guiText.text = "";
+				GTGameOver.GetComponent<GUIText>().text = "You Won!";
+				GTRoundResult.GetComponent<GUIText>().text = "";
 			} else {
-				GTGameOver.guiText.text = "Game Over";
-				GTRoundResult.guiText.text = "Player "+CURRENT_PLAYER.playerNum
+				GTGameOver.GetComponent<GUIText>().text = "Game Over";
+				GTRoundResult.GetComponent<GUIText>().text = "Player "+CURRENT_PLAYER.playerNum
 					+ " won";
 			}
 			GTGameOver.SetActive(true);
