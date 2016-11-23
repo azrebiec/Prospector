@@ -98,9 +98,9 @@ public class CardBartok : Card {
 				uC = 1; //set uC=1 so we don't overshoot
 				//move from the to___ state to the following state
 				if (state == CBState.toHand)
-					state = CBState.toHand;
+					state = CBState.hand;
 				if (state == CBState.toTarget)
-					state = CBState.toTarget;
+					state = CBState.target;
 				if (state == CBState.to)
 					state = CBState.idle;
 				//move to the final position
