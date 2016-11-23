@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 // This enum contains the different phases of a game turn
 public enum TurnPhase {
@@ -223,7 +224,7 @@ public class Bartok : MonoBehaviour {
 
 	public void RestartGame() {
 		CURRENT_PLAYER = null;
-		Application.LoadLevel("__Bartok_Scene_0");
+		SceneManager.LoadScene("__Bartok_Scene_0");
 	}
 
 	// ValidPlay verifies that the card chosen can be played on the discard pile
